@@ -1,0 +1,88 @@
+:root {
+  --main-text-color: #443b46;
+  --hover-color: #c53adc;
+  --accent-color: #9934bf;
+  --accent-color-second: #ffa600;
+  --secondary-color: #f5f2fe;
+  --link-color: #c663ff;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+  color: var(--accent-color);
+  transition: all 300ms ease-in;
+}
+h1:hover {
+  color: var(--accent-color-second);
+  transition: all 300ms ease-in;
+}
+h2 {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+}
+h3 {
+  padding-top: 18px;
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+}
+h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+body {
+  color: var(--main-text-color);
+  font-family: "Montserrat", sans-serif;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+.navigation a {
+  margin: 18px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+.main_button {
+  background: var(--accent-color);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  transition: all 300ms ease-in;
+}
+.main_button:hover {
+  background: var(--hover-color);
+  color: var(--secondary-color);
+}
+.secondary_button {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  transition: all 300ms ease-in;
+}
+.secondary_button:hover {
+  border: 1px solid var(--hover-color);
+  color: var(--hover-color);
+}
