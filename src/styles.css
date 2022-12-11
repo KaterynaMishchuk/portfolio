@@ -12,6 +12,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 68px;
+  line-height: 1;
   font-weight: bold;
   animation: color-animation 3s linear;
   color: var(--accent-color);
@@ -31,7 +32,7 @@ h1 {
   }
 }
 h2 {
-  padding-top: 24px;
+  padding: 24px;
   text-align: center;
   font-size: 30px;
   margin: 0;
@@ -45,8 +46,8 @@ h3 {
 }
 h4 {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   font-size: 20px;
 }
 @media (max-width: 800px) {
@@ -69,7 +70,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .prjcts {
-  background: #fff4e0;
+  background: #F5F2F5;
   padding: 24px;
   margin: 28px;
   border-radius: 5px;
@@ -110,7 +111,31 @@ body {
 .main_image {
   transition: all 0.8s ease-out;
   transform: scale(0.9, 0.9);
+  margin: 18px;
 }
 .main_image:hover {
   transform: scale(1, 1);
+}
+.active {
+  text-decoration: underline;
+  transition: all 300ms ease-in;
+}
+.active:hover {
+  color: var(--accent-color);
+}
+.nav-bg-light {
+  background: #F5F2F5;
+}
+.nav-item {
+  color: var(--main-color);
+  transition: all 300ms ease-in;
+}
+.nav-item:hover {
+  transform: scale(1.05, 1.05);
+}
+.works img{
+  transition: all 300ms ease-in;
+}
+.works img:hover{
+  transform: scale(1.05, 1.05);
 }
