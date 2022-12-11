@@ -21,10 +21,10 @@ h1 {
   0% {
     color: transparent;
   }
-  20% {
+  10% {
     color: var(--secondary-color);
   }
-  50% {
+  60% {
     color: var(--hover-color);
   }
   100% {
@@ -119,30 +119,49 @@ body {
   transition: all 0.8s ease-out;
   transform: scale(0.9, 0.9);
   margin: 18px;
+  max-height: 500px;
 }
 .main_image:hover {
   transform: scale(1, 1);
 }
-.active {
-  text-decoration: underline;
-  transition: all 300ms ease-in;
-}
-.active:hover {
-  color: var(--accent-color);
-}
-.nav-bg-light {
-  background: var(--background-color);
-}
-.nav-item {
-  color: var(--main-color);
-  transition: all 300ms ease-in;
-}
-.nav-item:hover {
-  transform: scale(1.05, 1.05);
-}
+
 .works img {
   transition: all 300ms ease-in;
 }
 .works img:hover {
   transform: scale(1.05, 1.05);
+}
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 48px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+nav li a {
+  transition: all 300ms ease-in;
+  color: var(--main-text-color);
+}
+nav li.active a,
+nav li a:hover {
+  color: var(--accent-color);
+  font-weight: bold;
 }
