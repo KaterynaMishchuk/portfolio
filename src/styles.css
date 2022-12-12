@@ -85,27 +85,29 @@ body {
   margin: 28px;
   border-radius: 5px;
 }
-.navigation {
+.buttons {
   display: flex;
   justify-content: center;
   font-size: 18px;
 }
-.navigation a {
+.buttons a {
   margin: 18px;
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 16px 48px;
   text-decoration: none;
 }
 .main_button {
   background: var(--accent-color);
   color: var(--secondary-color);
   transition: all 300ms ease-in;
+  border: 1px solid var(--accent-color);
 }
 .main_button:hover {
   background: var(--hover-color);
   color: var(--secondary-color);
   box-shadow: var(--box-shadow);
   transform: scale(1.05, 1.05);
+  border: 1px solid var(--hover-color);
 }
 .secondary_button {
   border: 1px solid var(--accent-color);
@@ -134,10 +136,6 @@ body {
 .works img:hover {
   transform: scale(1.05, 1.05);
 }
-.logo {
-  max-height: 40px;
-}
-
 nav {
   padding: 20px 0;
   font-size: 18px;
